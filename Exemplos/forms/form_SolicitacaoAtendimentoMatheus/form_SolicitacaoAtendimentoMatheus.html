@@ -1,0 +1,82 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="/portal/resources/style-guide/css/fluig-style-guide.min.css"/>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script type="text/javascript" src="/portal/resources/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+</head>
+<body>
+<div class="fluig-style-guide">
+<form name="form" role="form">
+
+	<h1>Solicitação Atendimento</h1>
+	<hr/>
+	
+	<div class="form-group col-md-2 col-xs-12 col-sm-12">
+		<label for="colleagueName">Nome Solicitante:</label>
+		<input type="text" class="form-control" name="colleagueName" id="colleagueName" placeholder="Nome Solicitante">
+	</div>
+
+	<div class="form-group col-md-10 col-xs-12 col-sm-12">
+		<label for="NOMEAREA">Nome da Área:</label>
+		<input type="text" class="form-control" name="NOMEAREA" id="NOMEAREA" placeholder="Nome da Área">
+	</div>
+
+	<div class="form-group col-md-10 col-xs-12 col-sm-12">
+		<label for="DESCAREA">Descrição da Área:</label>
+		<input type="text" class="form-control" rows="3" name="DESCAREA"></textarea>
+	</div>
+	
+	<div class="form-group col-md-10 col-xs-12 col-sm-12">
+		<label for="NOMEAREA">Nome da Área:</label>
+		<input
+				type = "zoom"
+				id = "PRIORIDADE"
+				name = "PRIORIDADE"
+				data-zoom="{
+						'displayKey' : 'prioridade', 
+						'datasetId' : 'ds_PrioridadeDeAtendimentoMatheus',
+						'placeholder' : 'Escolha a prioridade',
+						'fields':[
+								{
+									'field':'CODPRIORIDADE',
+									'label':'Código Prioridade'
+								},
+								{
+									'field':'PRIORIDADE',
+									'label':'Prioridade'
+								}
+							]
+						
+				}"/></div>
+		
+	<div class="form-group col-md-10 col-xs-12 col-sm-12">
+	<label for="STATUS_CHAMADO">Status:</label>		
+	<select name="STATUS_CHAMADO" class="form-control">
+		<option value="Aberto">Aberto</option>
+		<option value="Em andamento">Em Andamento</option>
+		<option value="Fechado">Fechado	</option>
+	</select>
+	</div>	
+	
+	<div class="form-group col-md-10 col-xs-12 col-sm-12">
+	<label for="STATUS_CHAMADO">Status:</label>	
+	<select
+		name="Usuarios" 
+		class="form-control" 
+		id="colleagueName" 
+		dataset="colleague" 
+		datasetkey="colleagueName" 
+		datasetvalue="colleagueName"
+	></select>
+	</div>
+
+	<div id="divcustom" class="form-group col-md-10 col-xs-12 col-sm-12">
+		divcustom que vai sumir
+	</div>
+
+</form>
+</div>
+</body>
+</html>

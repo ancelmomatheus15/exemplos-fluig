@@ -1,0 +1,78 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="/portal/resources/style-guide/css/fluig-style-guide.min.css"/>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script type="text/javascript" src="/portal/resources/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+</head>
+<body>
+<div class="fluig-style-guide">
+	<form name="form" role="form">
+	
+	<h1>Áreas de Atendimento</h1>
+	<hr/>
+	<div class="form-group col-md-2 col-xs-12 col-sm-12">
+		<label for="CODAREA">Código da Área:</label>
+		<input type="text" class="form-control" name="CODAREA" id="CODAREA" placeholder="Código">
+	</div>
+	
+	<div class="form-group col-md-10 col-xs-12 col-sm-12">
+		<label for="NOMEAREA">Código da Área:</label>
+		<input type="text" class="form-control" name="NOMEAREA" id="NOMEAREA" placeholder="Nome da Área">
+	</div>
+	
+	<div class="form-group col-md-10 col-xs-12 col-sm-12">
+		<label for="DESCAREA">Descrição da Área:</label>
+		<input type="text" class="form-control" rows="3" name="DESCAREA"></textarea>
+	</div>
+	
+	<div class="table">
+	<table class="table table-condensed" tablename="tb_analistas" name="tb_analistas" addbuttonlabel="Adicionar Filho" nodeletebutton="false">
+		<thead>
+			<tr>
+				<th>Analista</th>
+				<th>Experiência</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<input
+					type = "zoom"
+					id = "ANALISTA_AREA"
+					name = "ANALISTA_AREA"
+					data-zoom="{
+							'displayKey' : 'colleagueName', 
+							'datasetId' : 'colleague',
+							'placeholder' : 'Escolha o usuário',
+							'fields':[
+									{
+										'field':'colleagueName',
+										'label':'Nome usuário'
+									},
+									{
+										'field':'mail',
+										'label':'E-mail'
+									}
+								]
+							
+					}"/>
+					
+					</td>
+					<td>
+						<select name="EXP_ANALISTA" class="form-control">
+							<option value="Estagiario">Estagiário</option>
+							<option value="Junior">Júnior</option>
+							<option value="Pleno">Pleno</option>
+							<option value="Senior">Senior</option>	
+						</select>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	</form>
+</div>
+</body>
+</html>
