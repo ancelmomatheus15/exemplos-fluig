@@ -8,8 +8,29 @@
 </head>
 <body>
 <div class="fluig-style-guide">
-<form name="form" role="form">
-</form>
+	<form name="form" role="form">
+	
+	<div class="panel panel-default">
+		<div class="panel-body">
+		
+		<h1>Formulário de Acesso a API</h1>
+		<hr/>
+		
+		<div class="row">
+			<label for="LISTA_PASTAS">Informe a pasta</label>
+			<select onChange="carregaApi(this.value)" class="form-control" name="LISTA_PASTAS">
+				<option value="">Selecione...</option>
+			</select>select>
+		</div>div>
+		<hr />
+		<div class="row">
+			<ul id="LISTA_ARQUIVOS" class="list-group">
+				<li class="list-group-item active">Arquivos do diretório</li>
+			</ul>
+		</div>
+	</div>
 </div>
+</form>
+<script type="text/javascript" src="custom.js"></script>
 </body>
 </html>
