@@ -1,0 +1,48 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="/portal/resources/style-guide/css/fluig-style-guide.min.css"/>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script type="text/javascript" src="/portal/resources/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+</head>
+<body>
+<div class="fluig-style-guide">
+<form name="form" role="form">
+
+	<h1>Novo Ponto Comercial</h1>
+	<hr/>
+	
+	<div class="form-group col-md-2 col-xs-12 col-sm-12">
+		<label for="RESPONSAVEL">Responsável: </label>
+		<input type="zoom" id="RESPONSAVEL" name="RESPONSAVEL"
+			   data-zoom="{
+			   				'displayKey' : 'colleagueName',
+			   				'datasetId' : 'colleague',
+			   				'placeholder' : 'Escolha o responsável',
+			   				'fields':[
+			   						{
+			   							'field' : 'colleagueName',
+			   							'label' : 'Nome'
+			   						}	
+			   				]
+			   				
+			   		      }"/>
+	</div>
+	
+	<div class="form-group col-md-2 col-xs-12 col-sm-12">
+		<label for="COTACAO">Cotação: </label>
+		<input type="text" class="form-control" name="COTACAO" id="COTACAO">
+	</div>
+	
+	<div class="form-group col-md-2 col-xs-12 col-sm-12">
+		<label for="ESTADO">Estado: </label>
+		<input type="zoom" id="ESTADO" name="ESTADO">
+	</div>
+
+
+
+</form>
+</div>
+</body>
+</html>
