@@ -13,7 +13,7 @@
 	<h1>Novo Ponto Comercial</h1>
 	<hr/>
 	
-	<div class="form-group col-md-2 col-xs-12 col-sm-12">
+	<div class="form-group col-md-12 col-xs-12 col-sm-12">
 		<label for="RESPONSAVEL">Responsável: </label>
 		<input type="zoom" id="RESPONSAVEL" name="RESPONSAVEL"
 			   data-zoom="{
@@ -30,14 +30,30 @@
 			   		      }"/>
 	</div>
 	
-	<div class="form-group col-md-2 col-xs-12 col-sm-12">
+	<div class="form-group col-md-12 col-xs-12 col-sm-12">
 		<label for="COTACAO">Cotação: </label>
 		<input type="text" class="form-control" name="COTACAO" id="COTACAO">
 	</div>
 	
-	<div class="form-group col-md-2 col-xs-12 col-sm-12">
+	<div class="form-group col-md-12 col-xs-12 col-sm-12">
 		<label for="ESTADO">Estado: </label>
-		<input type="zoom" id="ESTADO" name="ESTADO">
+		<input type="zoom" id="ESTADO" name="ESTADO"
+			   data-zoom="{
+			   				'displayKey' : 'estado',
+			   				'datasetId' : 'ds_EstadosBrasileirosMatheus',
+			   				'placeholder' : 'Escolha o Estado',
+			   				'fields':[
+			   						{
+			   							'field' : 'estado',
+			   							'label' : 'Estado'
+			   						},
+			   						{
+			   							'field' : 'capital',
+			   							'label' : 'Capital'
+			   						}	
+			   				]
+			   				
+			   		      }"/>
 	</div>
 
 
