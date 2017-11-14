@@ -1,0 +1,61 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="/portal/resources/style-guide/css/fluig-style-guide.min.css"/>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script type="text/javascript" src="/portal/resources/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+</head>
+<body>
+<div class="fluig-style-guide">
+<form name="form" role="form">
+
+	<h1>Cadastro de Veículo</h1>
+	<hr/>
+	
+	<div class="form-group col-md-12 col-xs-12 col-sm-12">
+		<label for="MODELO">Modelo do Veículo: </label>
+		<input type="text" class="form-control" name="MODELO" id="MODELO">
+	</div>
+	
+	<div class="form-group col-md-12 col-xs-12 col-sm-12">
+		<label for="MARCA">Marca: </label>
+		<input type="zoom" id="MARCA" name="MARCA"
+			   data-zoom="{
+			   				'displayKey' : 'marca',
+			   				'datasetId' : 'ds_MarcasMatheus',
+			   				'placeholder' : 'Marca do veículo',
+			   				'fields':[
+			   						{
+			   							'field' : 'marca',
+			   							'label' : 'Marca'
+			   						},
+			   						{
+			   							'field' : 'pais',
+			   							'label' : 'País'
+			   						}
+			   				]
+			   				
+			   		      }"/>
+	</div>	
+	
+	<div class="form-group col-md-12 col-xs-12 col-sm-12">
+		<label for="ANO">Ano: </label>
+		<input type="text" class="form-control" name="ANO" id="ANO">
+	</div>
+	
+	<div class="form-group col-md-12 col-xs-12 col-sm-12">
+		<label for="NOMECLIENTE">Nome do Proprietário: </label>
+		<input type="text" class="form-control" name="NOMECLIENTE" id="NOMECLIENTE">
+	</div>
+	
+	<div class="form-group col-md-12 col-xs-12 col-sm-12">
+		<label for="CONTATO">Contato: </label>
+		<input type="text" class="form-control" name="CONTATO" id="CONTATO" mask="(00) 90000-0000">
+	</div>
+
+
+</form>
+</div>
+</body>
+</html>
